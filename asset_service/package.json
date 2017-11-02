@@ -1,0 +1,40 @@
+{
+  "name": "asset-service",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pirsquareff/user-info.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha -R spec **/*.spec.js",
+    "debug": "node-debug index.js",
+    "lint": "eslint ."
+  },
+  "author": "Parinthorn Saithong, parinthorn.sa@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.2.33",
+    "morgan": "^1.7.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5",
+    "node-inspector": "^1.1.1",
+    "should": "^8.3.0",
+    "supertest": "^1.2.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": 2
+    }
+  }
+}
